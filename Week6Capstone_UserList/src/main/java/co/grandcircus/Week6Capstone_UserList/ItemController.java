@@ -55,4 +55,11 @@ public class ItemController {
 		ModelAndView mav = new ModelAndView("redirect:/tasklist");
 		return mav;
 	}
+	
+	@RequestMapping("/edittask")
+	public ModelAndView editTask() {
+		ModelAndView mav = new ModelAndView("redirect:/tasklist");
+		return mav;
+	}
+	
 }

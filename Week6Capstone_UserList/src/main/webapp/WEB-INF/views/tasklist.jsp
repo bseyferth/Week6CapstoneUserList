@@ -15,7 +15,7 @@
 <table class="table">
 			<thead>
 				<tr>
-					<th>Description</th><th>Due Date</th><th>Completed</th><th>Delete</th>
+					<th>Description</th><th>Due Date</th><th>Completed</th><th>Delete</th><th>Finish Task</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -25,6 +25,7 @@
 						<td>${ item.dueDate }</td>
 						<td><input type="checkbox" value="true" ${ item.isComplete ? 'checked' : '' }></td>
 						<td> <a href="/delete">Delete</a></td>
+						<td> <a href="/edittask">Finish Task</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
